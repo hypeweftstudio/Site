@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F3D3A">
+  <meta name="description" content="Hypeweft Studio creates cinematic brand films, fashion campaigns, and moving images with meaning.">
+  <title>Hypeweft Studio — Motion with meaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Hypeweft Studio home"><img src="assets/hypeweft-logo.png" alt="Hypeweft Studio"></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#work">Portfolio <span>↓</span></a></nav>
+    <a class="nav-contact" href="mailto:hypeweft@gmail.com">GET IN TOUCH <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/posters/hero.jpg" aria-hidden="true" tabindex="-1">
+          <source src="assets/videos/hypeweft-hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-topline mono"><span>INDEPENDENT CREATIVE STUDIO</span><span>FILM · FASHION · CULTURE</span></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pulse"></span> HYPEWEFT STUDIO PRESENTS</p>
+        <h1>Motion<br><span class="outline">with</span> <em>meaning.</em></h1>
+        <div class="hero-bottom"><p>We shape visual worlds and make films<br>that stay with you.</p><a class="round-link" href="#work" aria-label="Explore the portfolio"><span>↓</span></a></div>
+      </div>
+      <div class="hero-foot mono"><span>SCROLL TO EXPLORE</span><span>EST. 2024 · INDEPENDENT BY DESIGN</span></div>
+      <div class="hero-index mono" id="hero-index">01 / 19</div>
+    </section>
+
+    <section class="intro section-pad" id="studio">
+      <div class="section-label mono"><span>01 — THE STUDIO</span><span>GOOD STORIES TRAVEL</span></div>
+      <div class="intro-grid"><h2>Built on craft.<br><em>Made to move.</em></h2><div class="intro-copy"><p class="lead">Hypeweft Studio is an independent creative studio for brands with a point of view.</p><p>From product films to fashion campaigns, we bring thoughtful direction, considered detail, and a cinematic eye to every frame.</p></div></div>
+    </section>
+
+    <section class="work section-pad" id="work">
+      <div class="section-label mono"><span>02 — THE PORTFOLIO</span><span id="project-count">19 FILMS</span></div>
+      <div class="work-heading"><h2>Selected<br><em>moving images.</em></h2><p>Brand films, campaigns,<br>and studio experiments.</p></div>
+      <div class="work-grid" id="work-grid" aria-live="polite"></div>
+      <div class="work-note mono"><span>HYPEWEFT STUDIO · A COLLECTION OF 19 FILMS</span><span>END OF REEL ↘</span></div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="section-label mono"><span>03 — CONTACT</span><span>LET’S MAKE SOMETHING MATTER</span></div>
+      <div class="contact-content"><p>Have a story<br>to <em>tell?</em></p><a class="contact-button" href="mailto:hypeweft@gmail.com"><span>START A<br>CONVERSATION</span><b>↗</b></a></div>
+      <div class="contact-bottom mono"><span>FOR PROJECTS &amp; COLLABORATIONS</span><a href="mailto:hypeweft@gmail.com">HYPEWEFT@GMAIL.COM <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="footer mono"><a class="brand footer-brand" href="#top" aria-label="Hypeweft Studio home"><img src="assets/hypeweft-logo.png" alt=""></a><span>© 2026 HYPEWEFT STUDIO</span></footer>
+
+  <dialog class="video-modal" aria-label="Project video"><button class="modal-close" aria-label="Close video">×</button><div class="video-stage"></div><div class="modal-caption mono"></div></dialog>
+</body>
+</html>
